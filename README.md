@@ -1,3 +1,2 @@
-#EM OBRAS!
-$$%%%
+# EM OBRAS!
 
