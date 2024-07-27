@@ -2,12 +2,12 @@
 // importando configurações de conexão com BD
 require_once 'config.php';
 class tester_conexao{
-    function verificarConexao() {
+    function verificarConexao(){
         // Estabelecendo conexão com banco de dados
         $con = new Conexao();
         $conectado = $con->connect();
         // Verificando se a conexão foi bem sucedida
-        if (!$conectado) {echo "Houve um erro de conexão";}
+        if(!$conectado){echo"Houve um erro de conexão";}
         echo "<br>Conectado...<br>";
         $sql = "SELECT * FROM login LIMIT 1";
         $sql = $conectado->prepare($sql);
