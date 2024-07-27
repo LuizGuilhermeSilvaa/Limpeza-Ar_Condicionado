@@ -1,19 +1,4 @@
 <?php
-
-function verificarConexao() {
-    $con = new Conexao();
-    $conectado = $con->connect();
-    
-    if ($conectado) {
-        echo "<br>Conectado...<br>";
-        $sql = "SELECT * FROM login";
-        $result = $conectado->query($sql);
-        foreach ($result as $results){
-            print_r($results);
-        }
-    }
-}
-
 class conexao
 {
     private $host = 'localhost';
@@ -31,7 +16,4 @@ class conexao
         }
     }
 }
-
-verificarConexao();
-
 ?>
