@@ -7,7 +7,7 @@ class tester_conexao{
         $con = new Conexao();
         $conectado = $con->connect();
         // Verificando se a conexão foi bem sucedida
-        if(!$conectado){echo"Houve um erro de conexão";}
+        if(!$conectado){echo"Houve um erro de conexão"; return;}
         echo "<br>Conectado...<br>";
         $sql = "SELECT * FROM login LIMIT 1";
         $sql = $conectado->prepare($sql);
